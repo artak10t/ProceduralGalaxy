@@ -1,6 +1,10 @@
 # ProceduralGalaxy
 > Procedural universe generation with planets and stars, inspired by Space Engine.
 
+## :dizzy: Systems
+
+![](Sector.gif)
+
 ## :clipboard: Meta
 
 Spartak Gevorgyan – artak10t@gmail.com
