@@ -1,6 +1,6 @@
 # ProceduralGalaxy
 ![](Galaxy.gif)
-> Procedural universe generation with planets and stars, inspired by Space Engine.
+> Procedural galaxy generation with planets and stars, inspired by Space Engine.
 
 ![](Sector.gif)
 > Fly thorugh the galaxy.
