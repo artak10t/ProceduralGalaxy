@@ -3,7 +3,7 @@
 > Procedural galaxy generation with planets and stars, inspired by Space Engine.
 
 ![](Sector.gif)
-> Fly thorugh the galaxy.
+> Fly through the galaxy.
 
 ## :dizzy: Systems
 
