@@ -1,4 +1,4 @@
-# ProceduralUniverse
+# ProceduralGalaxy
 > Procedural universe generation with planets and stars, inspired by Space Engine.
 
 ## :clipboard: Meta
