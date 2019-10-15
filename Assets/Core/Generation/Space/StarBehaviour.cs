@@ -10,11 +10,11 @@ public class StarBehaviour : MonoBehaviour
     public float Scale;
     public int Seed;
     public string Name;
+    public GameObject model;
 
     private Transform _cam;
     private float modelRenderDistance = 500f;
     private bool modelRendered = false;
-    private GameObject model;
 
     private void Start()
     {

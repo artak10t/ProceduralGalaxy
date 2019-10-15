@@ -34,6 +34,7 @@ public class StarSystem : MonoBehaviour
 
     private void DestroyPlanets()
     {
+        Destroy(star.model.GetComponent<Light>());
         for (int i = 0; i < planets.Count; i++)
         {
             Destroy(planets[i]);
@@ -42,6 +43,11 @@ public class StarSystem : MonoBehaviour
 
     private void GeneratePlanets()
     {
+        Light light = star.model.AddComponent<Light>();
+        light.type = LightType.Point;
+        light.range = 1000000000;
+        light.intensity = 100000000;
+
         Random.InitState(star.Seed);
         int planetsCount = Random.Range(0, 8);
 
@@ -51,7 +57,16 @@ public class StarSystem : MonoBehaviour
             planet.transform.parent = transform;
             planet.AddComponent<MeshFilter>().mesh = (Mesh)Resources.Load("Primitives/CubeSphere", typeof(Mesh));
             planet.AddComponent<MeshRenderer>();
-            planet.GetComponent<Renderer>().material = (Material)Resources.Load("Stars/StarModelMaterial", typeof(Material));
+
+            planet.GetComponent<Renderer>().material = (Material)Resources.Load("Planets/PlanetModelMaterial", typeof(Material));
+            planet.GetComponent<Renderer>().material.SetFloat("Vector1_103A71D3", Random.value * star.Seed);
+            Color color = new Color(Random.Range(0.1f, 1), Random.Range(0.1f, 1), Random.Range(0.1f, 1), 1);
+            Color atmoColor = new Color(Random.Range(0.1f, 1), Random.Range(0.1f, 1), Random.Range(0.1f, 1), 1);
+            Color liquColor = new Color(Random.Range(0.1f, 1), Random.Range(0.1f, 1), Random.Range(0.1f, 1), 1);
+            planet.GetComponent<Renderer>().material.SetColor("Color_976DB11", color);
+            planet.GetComponent<Renderer>().material.SetColor("Color_33D1831D", atmoColor);
+            planet.GetComponent<Renderer>().material.SetColor("Color_40A00648", liquColor);
+
             planet.AddComponent<Orbit>().focusObject = transform;
 
             //Distance from star
