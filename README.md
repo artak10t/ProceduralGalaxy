@@ -1,9 +1,19 @@
 # ProceduralGalaxy
+![](Galaxy.gif)
 > Procedural universe generation with planets and stars, inspired by Space Engine.
+
+![](Sector.gif)
+> Fly thorugh the galaxy.
 
 ## :dizzy: Systems
 
-![](Sector.gif)
+![](System.gif)
+> Planets orbit around stars using pre-calculated pseudorandom fixed orbit.
+
+## :earth_americas: Planet
+
+![](Planet.png)
+> Random planet shot.
 
 ## :clipboard: Meta
 
