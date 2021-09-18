@@ -8,7 +8,7 @@
 ## :dizzy: Systems
 
 ![](System.gif)
-> Planets orbit around stars using pre-calculated pseudorandom fixed orbit.
+> Planets orbit around stars using pre-calculated orbit.
 
 ## :earth_americas: Planet
 
